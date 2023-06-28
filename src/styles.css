@@ -1,0 +1,84 @@
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(#121212, #1e1d30);
+}
+
+.title{
+    font-size: 100px;
+    color: rgb(221, 221, 221);
+    animation: titulo 1s;
+}
+
+@keyframes titulo {
+    from {
+        transform: rotateX(90deg);
+    }
+    to {
+        transform: rotateX(0deg);
+    }
+}
+
+.containerInput {
+    background-color: #1e1d30;
+    padding: 15px;
+    margin: 34px 0;
+    display: flex;
+    border-radius: 3px;
+    box-shadow: 3px 3px 8px #a0a0a071;
+}
+
+.containerInput input {
+    background-color: transparent;
+    border: 0;
+    font-size:20px ;
+    color: #f1f1f1;
+    outline: none;
+    margin-right: 8px;
+}
+
+.containerInput input::placeholder{
+    color: #f1f1f1;
+}
+
+.buttonSearch {
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 1s;
+}
+
+.buttonSearch:hover{
+    transform: scale(1.2);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #adadad96;
+    width: 400px;
+    border-radius: 8px;
+}
+
+.main h2 {
+    margin: 16px 0;
+    font-size: 39px;    
+}
+
+.main span {
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+@media (max-width: 530px){
+    .title{font-size: 60px;
+    }
+}
