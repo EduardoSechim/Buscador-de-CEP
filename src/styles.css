@@ -4,22 +4,30 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(#121212, #1e1d30);
+    background: linear-gradient(90deg,#4C4B16, #645e18); 
+}
+
+.container footer {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;   
+    font-weight: 200; 
+    color: #ffffff;
+}
+
+.container span {
+    color: #99000027;
 }
 
 .title{
     font-size: 100px;
-    color: rgb(221, 221, 221);
-    animation: titulo 1s;
+    color: rgb(255, 255, 255);
+    animation: fadeIn 1.5s;
 }
 
-@keyframes titulo {
-    from {
-        transform: rotateX(90deg);
-    }
-    to {
-        transform: rotateX(0deg);
-    }
+@keyframes fadeIn {
+    0% {opacity: 0%;}
+    100% {opacity: 100%;}
 }
 
 .containerInput {
@@ -28,7 +36,7 @@
     margin: 34px 0;
     display: flex;
     border-radius: 3px;
-    box-shadow: 3px 3px 8px #a0a0a071;
+    box-shadow: 3px 3px 8px #413c0f;
 }
 
 .containerInput input {
@@ -63,22 +71,28 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #adadad96;
+    background-color: #1e1d30;
     width: 400px;
     border-radius: 8px;
+    box-shadow: 3px 3px 8px #413c0f;
 }
 
 .main h2 {
     margin: 16px 0;
     font-size: 39px;    
+    color: #E7B10A
 }
 
 .main span {
     margin-bottom: 16px;
     font-weight: bold;
+    color: #E7B10A;
 }
 
 @media (max-width: 530px){
-    .title{font-size: 60px;
-    }
+    .title{font-size: 60px};    
+}
+
+@media (max-width: 530px){
+    .footer{font-size: 10px};
 }
